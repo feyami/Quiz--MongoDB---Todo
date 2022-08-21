@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Mouse Memoirs', sans-serif;
+  background : linear-gradient(90deg, #84c1e7, #163ecc);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  align-items: center;
+   
+}
+#toDo-form{
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 20px 40px 50px;
+  border-radius: 15px;
+  color: rgb(78, 77, 76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input, button{
+  font-size: larger;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border:1px solid darkblue;
+}
+button{
+  background-color: transparent;
+  border:1px solid transparent;
+  margin-left: 10px;
+  color: #163ecc;
+  cursor: pointer;
+}
+#form-input{
+   
+  width: 80%;
+  }
+#form-input:focus{
+outline: none;
+transform: scale(1.05);
+width: 80%;
+}
+button:hover{
+   border:1px solid darkblue;
+   background-color: #163ecc;
+   color: #fff;
+}
+.toDo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.toDo-item{
+  font-size: xx-large;
+  background-color: #fff;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin:10px 0px;
+  border-radius: 10px;
+}
+#editInput:focus{
+background-color:red;
+}
+.toDo-item i{
+  padding: 0px 8px;
+}
+
+.completed{
+  text-decoration: line-through;
+  color: red;
+  background-color: rgb(178, 200, 243);  
+}
+#completed{
+  background-color: rgb(178, 200, 243);
+  transform: scale(0.98);
+   
+}
+#editInput{
+   outline: none;
+  border:none; 
+  padding: 0;
+}
+.invisible{
+  display:none;
+}
+.visible{
+  display:block;
+}
+@media only screen and (max-width: 600px) {
+  #toDo-form{
+    width: 100%;
+    padding: 20px 10px;
+    background-color:#bcdff4
+  }
+
+  #editInput{
+    font-size: medium;
+    border:none; 
+    padding: 0;
+  }
+  .icons{
+    font-size: 0.7em;
+    padding:2px !important;
+  }
+  .toDo-item{
+    padding:10px 5px;
+  }
+}
